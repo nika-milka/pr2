@@ -1,0 +1,35 @@
+// Цвета
+$primary-color: rgb(23, 152, 152);
+$button-bg-color: #00ff02;
+$button-hover-bg-color: #FC0FC0;
+$body-bg-color: #f4f4f4;
+
+// Шрифты
+$font-family: 'Arial', sans-serif;
+
+$default-padding: 20px;
+$button-padding: 10px 20px;
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: $default-padding;
+    background-color: $body-bg-color;
+
+    h1 {
+        text-align: center;
+        color: $primary-color;
+    }
+
+    .button {
+        background-color: $button-bg-color;
+        color: white;
+        border: none;
+        padding: $button-padding;
+        cursor: pointer;
+        border-radius: 25px;
+
+        &:hover {
+            background-color: $button-hover-bg-color;
+        }
+    }
+}
